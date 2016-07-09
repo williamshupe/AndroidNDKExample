@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.androidndkexample.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/button_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/shoot_button"
+            android:layout_width="88dp"
+            android:layout_height="48dp"
+            android:text="Shoot"
+            />
+
+        <Button
+            android:id="@+id/pass_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pass"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/shots_label"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:text="Shots:"
+        android:layout_alignBaseline="@+id/shots_stat"
+        android:layout_toLeftOf="@+id/shots_stat"
+        />
+
+    <TextView
+        android:id="@+id/shots_stat"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button_holder"
+        />
+
+    <TextView
+        android:id="@+id/goals_label"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:text="Goals:"
+        android:layout_alignBaseline="@+id/goals_stat"
+        android:layout_toLeftOf="@+id/goals_stat"
+        />
+
+    <TextView
+        android:id="@+id/goals_stat"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/shots_stat"
+        />
+
+    <TextView
+        android:id="@+id/assists_label"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:text="Assists:"
+        android:layout_alignBaseline="@+id/assists_stat"
+        android:layout_toLeftOf="@+id/assists_stat"
+        />
+
+    <TextView
+        android:id="@+id/assists_stat"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/goals_stat"
+        />
+
+    <TextView
+        android:id="@+id/player_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/assists_stat"
+        />
+</RelativeLayout>
